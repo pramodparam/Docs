@@ -1,0 +1,29 @@
+Front-End:
+
+HTML--Semantic HTML
+
+
+CSS-->
+
+
+JavaScript-->
+
+
+React .. TypeScript
+
+State Management-Recoil like redux
+
+* React Hook Form
+* Typescript-->Make type safe beacause javascript is untyped script
+* Playwright- frontend testing tool
+* Oauth-Web Security
+* Canvas JS & ChartJS
+* Tailwind
+
+
+
+
+
+Backend:
+
+* REST API

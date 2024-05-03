@@ -1,0 +1,16 @@
+*Component:It is used to denote a class as a Component.
+
+*Autowired: It is used to inject the bean automatically.
+->It is used for automatic dependency injection.
+->Used in constructor injection,setter injection,field injection.
+
+*Qualifier: It is used to differentiate a bean among the same type of bean objects.
+->If we have more than one bean of the same type and want to wire only one of them then use the @Qualifier annotation.
+
+*RestController:  This annotation is applied to a class to mark it as a request handler.
+-> Spring RestController annotation is used to create RESTful web services using Spring MVC.
+
+*Service :It is used to specify that a class performs business logic or data manipulation tasks.
+
+*RequestMapping:It is used to map HTTP requests to handler methods of MVC(Model View Controller) and REST controllers.
+*GetMapping:It maps HTTP GET requests to a specific handler method in Spring controllers. 
