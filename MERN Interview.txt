@@ -1,0 +1,131 @@
+MERN Interview
+* NodeJS is single threaded platform used for handling asynchronus task ..when it recieves any blocking or non blocking task it goes through event queue one by one.When node knows its non blocking it process and returns res but if it is blocking it assign a thread to task from thread pool i.e basically called lib from lib UV library (worker thread) the callback is also assigned when task is completed the callback returns the response.
+
+*Handle concurrency: essential feature of Node. js that enables it to handle large numbers of I/O operations simultaneously, without blocking the execution thread. 
+ It achieve by same above answer
+
+
+*Diff btw NPM and YARN(Yet Another Resource Negotiator):Both are dependency Managers:
+->Npm i download directly from Npm registery but yarn add it checks for local if the dependency is present or not and then download from registery
+->while installing multiple dependency npm i sequentially ,yarn install parallely
+
+
+*CALLBACK HELL:
+->Nested callback
+
+*req.params and req.body 
+get data from url and get data from form data
+
+
+*Stream:To handle Large files and Large data
+->It reads the files in the form of chunks 
+->If the file is in different machine it doesnt need a complete file to read it doesnt need to be on our machine it reads in the form of small chunks.It reads or write the data in the form of small chunks
+->Readable,Writable,Duplex,Transform
+
+
+*Buffer->Class in NodeJS basically allocates memory outside of the heap
+Buffer is a way to store and manipulate binary data in Node.js
+Heap memory is a part of memory allocated to JVM, which is shared by all executing threads in the application
+
+
+*MiddleWare->Have complete command over request and response
+->function for implementing different cross-cutting concerns such as authentication, logging, etc.
+-> we can pass authentication and authorization as a middleware,also can perform asynchornus operation
+->Authenticate or authorize requests
+Log the requests
+Parse the request body
+End a request-response cycle
+
+
+*Stub -> used while unit testing->It will create duplicate functions with a predetermined value.
+-> Generate output simlar to original func with help of predetermined output it basically validate unit test cases
+
+
+*Libuv library:Pool of worker threads present inside event loop
+
+*Clustering:Used to improve scalability of application 
+->Cluster module creates multiple instances of our application and all are running at same time if one of machine or srver down we can access the application on other machine at same time.
+
+
+*createReadStream:reading large files in the form of small chunks
+
+*INbuilt moduels of nodeJS: HTTP,OS,FS,URL
+
+*JWT->Sending data between server and client ,server provides JWT key to client n whenever the client request for data its send key along with data server identifies.
+->Signature,Payload ,Content.
+
+
+
+*Express:Express is a layer built on Node.js which helps us to manage our web server and routes. Since Express is built on top of Node.js, it is a perfect framework for performing high-speed input and output operations.
+
+.env-->.env file in the application's root directory that contains key/value pairs defining the project's required environment variables.
+
+-->express.static() serves static assets such as HTML files, images, and so on.
+-->express.json() is a method inbuilt in express to recognize the incoming Request Object as a JSON Object.
+-->express.urlencoded() is a method inbuilt in express to recognize the incoming Request Object as strings or arrays. 
+
+*Middleware--->function for implementing different cross-cutting concerns such as authentication, logging, etc. 
+
+> Authenticate(process of verifying who a user is) or authorize(process of verifying what they have access to) requests
+> Log the requests
+> Parse the request body
+> End a request-response cycle
+
+
+
+
+
+
+
+
+
+
+ReactJS->
+
+Features:
+*Virtual DOM
+*Component Based arc
+*JSX Syntax
+*Uni-Directional:React’s one-way data flow (also called one-way binding) keeps everything modular and fast and easy to debug.
+*SEO performance
+
+
+->Diffing Algorithm : Diff between Actual DOM and Virtual DOM
+
+
+Controlled components     
+*Controlled by the parent component.
+*The component is under control of the component’s state.
+*It Accepts the current value as props.
+                           
+Un-Controlled Components
+
+*Components are under the control of DOM.
+*We access the values using refs.
+*Controlled by the DOM itself.
+                      
+->Keys:Keys are used in React to identify which items in the list are changed, updated, or deleted.
+
+
+->Pass data from child to parent : Using callback func
+*create func in parent component it takes two parameters and value of two parameters are in child components.
+*And pass this func as a prop to child component and access that prop and pass those two values to that function and will be executed
+
+
+->AJAX is a developer's dream, because you can:
+
+* Update a web page without reloading the page
+* Request data from a server - after the page has loaded
+* Receive data from a server - after the page has loaded
+* Send data to a server - in the background
+
+->Unmount in Functional component :
+
+Add return function at the end of useEffect it is triggered when a component unmounts from the DOM.
+
+->Lazy Loading:loading content only when its needed.
+  *->For example, if a web page has an image that the user has to scroll down to see, you can display a placeholder and lazy load the full image only when the user arrives to its location.
+
+
+
+ 
